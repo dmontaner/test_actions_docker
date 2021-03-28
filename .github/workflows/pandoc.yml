@@ -38,4 +38,6 @@ jobs:
           ls -l
           echo Run padoc via Docker:
           docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex README.md
+          echo After pandoc Things here:
+          ls -l
           echo DONE
